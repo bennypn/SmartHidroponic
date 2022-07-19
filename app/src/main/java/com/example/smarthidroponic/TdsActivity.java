@@ -13,49 +13,48 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity {
-    private Button phVal, btnTds, btnControl;
+public class TdsActivity extends AppCompatActivity {
+    private Button tdsVal, btnPh, btnControl;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("transaction").child("ph");
+    DatabaseReference myRef1 = database.getReference("transaction").child("tds");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tds);
 
-        phVal = findViewById(R.id.ph_val);
-        btnTds = findViewById(R.id.btn_tds);
+        tdsVal = findViewById(R.id.tds_val);
+        btnPh = findViewById(R.id.btn_ph);
         btnControl = findViewById(R.id.btn_control);
 
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                Float ph = dataSnapshot.getValue(Float.class);
+                Integer tds = dataSnapshot.getValue(Integer.class);
 
-                if(ph <= 4.5 || ph > 6.5){
-                    phVal.setBackgroundColor(getResources().getColor(R.color.merah));
-                } else if((ph>4.5 && ph<5.0) || (ph>6.0 && ph<=6.5)){
-                    phVal.setBackgroundColor(getResources().getColor(R.color.kuning));
-                } else  if(ph <= 6.0 && ph >= 5.0){
-                    phVal.setBackgroundColor(getResources().getColor(R.color.ijo));
+                if(tds <= 1050 || tds > 1400){
+                    tdsVal.setBackgroundColor(getResources().getColor(R.color.merah));
+                } else if((tds>1050 && tds<1150) || (tds>1300 && tds<=1400)){
+                    tdsVal.setBackgroundColor(getResources().getColor(R.color.kuning));
+                } else  if(tds <= 1300 && tds >= 1150){
+                    tdsVal.setBackgroundColor(getResources().getColor(R.color.ijo));
                 }
-                phVal.setText(ph.toString());
+                tdsVal.setText(tds.toString());
 
             }
             @Override
             public void onCancelled(DatabaseError error) {  }
         });
 
-        btnTds.setOnClickListener(new View.OnClickListener() {
+        btnPh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,TdsActivity.class);
+                Intent i = new Intent(TdsActivity.this,MainActivity.class);
                 startActivity(i);
             }
         });
-
     }
 
     @Override

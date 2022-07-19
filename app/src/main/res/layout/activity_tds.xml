@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/group_4"
-    tools:context=".MainActivity">
+    android:background="@drawable/group_5"
+    tools:context=".TdsActivity">
 
     <Button
-        android:id="@+id/ph_val"
+        android:id="@+id/tds_val"
         android:layout_width="267dp"
         android:layout_height="82dp"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/ijo"
         android:text="7.5"
         android:textSize="34sp"
         app:cornerRadius="15dp"
@@ -21,32 +21,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_ph"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/grey"
         android:text="pH"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
         app:layout_constraintVertical_bias="0.117" />
 
     <Button
-        android:id="@+id/btn_tds"
+        android:id="@+id/button9"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/grey"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/blue"
         android:text="tds"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_ph"
         app:layout_constraintEnd_toEndOf="@+id/btn_control"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintTop_toTopOf="@+id/btn_ph"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button7"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
@@ -66,10 +68,11 @@
         android:backgroundTint="@color/grey"
         android:text="controlling"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/button7"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
