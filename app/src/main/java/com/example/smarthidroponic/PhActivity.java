@@ -13,35 +13,44 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class TdsActivity extends AppCompatActivity {
-    private Button tdsVal, btnPh, btnControl;
+public class PhActivity extends AppCompatActivity {
+    private Button phVal, btnTds, btnControl;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef1 = database.getReference("transaction").child("tds");
+    DatabaseReference myRef = database.getReference("transaction").child("ph");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tds);
+        setContentView(R.layout.activity_ph);
 
-        tdsVal = findViewById(R.id.tds_val);
+        phVal = findViewById(R.id.ph_val);
+        btnControl = findViewById(R.id.ph_val);
 
-        myRef1.addValueEventListener(new ValueEventListener() {
+        myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                Integer tds = dataSnapshot.getValue(Integer.class);
+                Float ph = dataSnapshot.getValue(Float.class);
 
-                if(tds < 500 || tds > 800){
-                    tdsVal.setBackgroundColor(getResources().getColor(R.color.merah));
-                } else  if(tds <= 800 && tds >= 500){
-                    tdsVal.setBackgroundColor(getResources().getColor(R.color.ijo));
+                if(ph < 5.5 || ph > 6.5){
+                    phVal.setBackgroundColor(getResources().getColor(R.color.merah));
+                } else  if(ph <= 6.5 && ph >= 5.5){
+                    phVal.setBackgroundColor(getResources().getColor(R.color.ijo));
                 }
-                tdsVal.setText(tds.toString());
+                phVal.setText(ph.toString());
 
             }
             @Override
             public void onCancelled(DatabaseError error) {  }
+        });
+
+
+        btnControl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(PhActivity.this,ControlActivity.class);
+            }
         });
 
     }

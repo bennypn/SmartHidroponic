@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_control.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_control.xml" value="0.264" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_hcsr.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_login.xml" value="0.1936725096194955" />
         <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_main.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_mixer.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_monitoring.xml" value="0.264" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_ph.xml" value="0.17633726201269265" />
         <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_registration.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_splash.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_tds.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Andhika Trap/AndroidStudioProjects/SmartHidroponic/app/src/main/res/layout/activity_turbidity.xml" value="0.1936725096194955" />
       </map>
     </option>
   </component>

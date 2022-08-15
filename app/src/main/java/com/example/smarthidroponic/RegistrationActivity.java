@@ -109,7 +109,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
 
                             usernm = email.substring(0,5);
-                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            FirebaseDatabase database = FirebaseDatabase.getInstance("https://smarthidroponic-default-rtdb.asia-southeast1.firebasedatabase.app/");
                             DatabaseReference myRef = database.getReference("user").child(usernm);
                             myRef.child("nama").setValue(newname);
 

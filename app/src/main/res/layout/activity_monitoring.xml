@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitoringActivity">
+
+    <Button
+        android:id="@+id/btn_ph_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pH menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <Button
+        android:id="@+id/btn_tds_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="tds menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ph_menu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_ph_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ph_menu" />
+
+    <Button
+        android:id="@+id/btn_turbidity_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="turbidity"
+        app:layout_constraintEnd_toEndOf="@+id/btn_tds_menu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_tds_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tds_menu" />
+
+    <Button
+        android:id="@+id/btn_hcsr_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="hcsr"
+        app:layout_constraintEnd_toEndOf="@+id/btn_turbidity_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_turbidity_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_turbidity_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

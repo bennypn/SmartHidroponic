@@ -4,6 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/controlling__3_"
     tools:context=".ControlActivity">
+
+    <Switch
+        android:id="@+id/nutrisiB_sw"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:checked="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Nutrisi B"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#988F8F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <Switch
+        android:id="@+id/nutrisiA_sw"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="80dp"
+        android:checked="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Nutrisi A"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#988F8F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nutrisiB_sw"
+        app:layout_constraintEnd_toEndOf="@+id/nutrisiB_sw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nutrisiB_sw" />
+
+    <Switch
+        android:id="@+id/phDown_sw"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:checked="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="pH Down"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#988F8F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nutrisiA_sw"
+        app:layout_constraintEnd_toEndOf="@+id/nutrisiA_sw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nutrisiA_sw" />
+
+    <Switch
+        android:id="@+id/phUp_sw"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="80dp"
+        android:checked="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="pH Up"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#988F8F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/phDown_sw"
+        app:layout_constraintEnd_toEndOf="@+id/phDown_sw"
+        app:layout_constraintStart_toStartOf="@+id/phDown_sw" />
+
+
+    <Switch
+        android:id="@+id/auto_sw"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="80dp"
+        android:checked="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Manual"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#988F8F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <Button
+        android:id="@+id/btn_mixer_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MIXER"
+        app:layout_constraintBottom_toTopOf="@+id/auto_sw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/group_5__1_"
-    tools:context=".TdsActivity">
+    tools:context=".HcsrActivity">
 
     <Button
-        android:id="@+id/tds_val"
+        android:id="@+id/hcsr_val"
         android:layout_width="267dp"
         android:layout_height="82dp"
         android:backgroundTint="@color/ijo"

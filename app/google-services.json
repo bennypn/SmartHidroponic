@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "690262378528",
-    "firebase_url": "https://ta-dhika-alwan-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "ta-dhika-alwan",
-    "storage_bucket": "ta-dhika-alwan.appspot.com"
+    "project_number": "77628918171",
+    "firebase_url": "https://smarthidroponic-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smarthidroponic",
+    "storage_bucket": "smarthidroponic.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:690262378528:android:fd6dec46a05227e9b91445",
+        "mobilesdk_app_id": "1:77628918171:android:80bb4e04d7d97a7f8c393e",
         "android_client_info": {
           "package_name": "com.example.smarthidroponic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "690262378528-l8hlp57164fahjqhh8411uajbi8v9dou.apps.googleusercontent.com",
+          "client_id": "77628918171-jl0b99gp3d7re45ie237621tc4rlh1qs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCQ7mxVC9_N6CiTQIfSWKHBJfYmo_0s4o8"
+          "current_key": "AIzaSyAAR77JIXZGCPo_kVByNFz9FP-GsRyRpH4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "690262378528-l8hlp57164fahjqhh8411uajbi8v9dou.apps.googleusercontent.com",
+              "client_id": "77628918171-jl0b99gp3d7re45ie237621tc4rlh1qs.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
